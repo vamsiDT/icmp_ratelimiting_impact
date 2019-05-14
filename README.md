@@ -1,3 +1,3 @@
-# icmp_ratelimiting_impact
+# ICMP Ratelimiting impact on routers
 
-The evaluation of the impact on routers by triggering icmp ratelimiting
+Evaluation of the impact on routers by triggering icmp ratelimiting
