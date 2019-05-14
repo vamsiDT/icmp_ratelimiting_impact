@@ -1,0 +1,86 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Successfully loaded changepoint package version 2.2.2
+ NOTE: Predefined penalty values changed in version 2.2.  Previous penalty values with a postfix 1 i.e. SIC1 are now without i.e. SIC and previous penalties without a postfix i.e. SIC are now with a postfix 0 i.e. SIC0. See NEWS and help files for further details.
+Successfully loaded changepoint.np package version 0.0.2
+for 10.0.0.2 with probing rate 900...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 1107178 ns
+Sending took 5024.01 ms
+Read 4500 ICMP(v6) packets outgoing
+Read 4500 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 945...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 1054177 ns
+Sending took 5054.72 ms
+Read 4725 ICMP(v6) packets outgoing
+Read 4725 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 992...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 999035 ns
+Sending took 5025.08 ms
+Read 4960 ICMP(v6) packets outgoing
+Read 4960 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1041...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 936131 ns
+Sending took 4928.95 ms
+Read 5205 ICMP(v6) packets outgoing
+Read 5205 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1093...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 911030 ns
+Sending took 5035.02 ms
+Read 5465 ICMP(v6) packets outgoing
+Read 5465 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1147...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 867894 ns
+Sending took 5055.59 ms
+Read 5735 ICMP(v6) packets outgoing
+Read 5735 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1204...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 826396 ns
+Sending took 5034.23 ms
+Read 6020 ICMP(v6) packets outgoing
+Read 6002 ICMP(v6) packets replies
+Loss rate: 0.00299003
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1264...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 777248 ns
+Sending took 4983.9 ms
+Read 6320 ICMP(v6) packets outgoing
+Read 6000 ICMP(v6) packets replies
+Loss rate: 0.0506329
+Found the triggering probing rate 1264 for the target loss rate interval [0.05, 0.99] for 10.0.0.2
+Loss rate: 0.0506329
+10.0.0.2, INDIVIDUAL, 1264, 5000, 0.0506329, 0.999667, 0.000333333, 0.0031348, 0.996865

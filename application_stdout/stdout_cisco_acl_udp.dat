@@ -1,0 +1,48 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Successfully loaded changepoint package version 2.2.2
+ NOTE: Predefined penalty values changed in version 2.2.  Previous penalty values with a postfix 1 i.e. SIC1 are now without i.e. SIC and previous penalties without a postfix i.e. SIC are now with a postfix 0 i.e. SIC0. See NEWS and help files for further details.
+Successfully loaded changepoint.np package version 0.0.2
+001.08 ms
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 256...
+Interval between each probe is 3902607 ns
+Sending took 5001.65 ms
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 512...
+Interval between each probe is 1948980 ns
+Sending took 5000.53 ms
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1024...
+Interval between each probe is 972924 ns
+Sending took 5004.59 ms
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 2048...
+Interval between each probe is 484615 ns
+Sending took 5007.39 ms
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 4096...
+Interval between each probe is 240502 ns
+Sending took 5014.79 ms
+Loss rate: 0.00478516
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 8192...
+Interval between each probe is 118464 ns
+Sending took 5029.53 ms
+Loss rate: 0.49978
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 16384...
+Interval between each probe is 57429 ns
+Sending took 5063.95 ms
+Loss rate: 0.748096
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 32768...
+Interval between each probe is 26608 ns
+Sending took 4944.5 ms
+Loss rate: 0.877026
+No triggering probing rate found for the target loss rate interval [0.98, 0.99] for 10.0.0.1
+Loss rate: 0.877026
+10.0.0.1, INDIVIDUAL, 32768, 63, 0.877026, 0.938604, 0.0613957, 0.00860179, 0.991398

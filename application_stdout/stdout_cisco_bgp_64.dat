@@ -1,0 +1,113 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Successfully loaded changepoint package version 2.2.2
+ NOTE: Predefined penalty values changed in version 2.2.  Previous penalty values with a postfix 1 i.e. SIC1 are now without i.e. SIC and previous penalties without a postfix i.e. SIC are now with a postfix 0 i.e. SIC0. See NEWS and help files for further details.
+Successfully loaded changepoint.np package version 0.0.2
+0.0.0.1 with probing rate 64...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 15621191 ns
+Sending took 5005.53 ms
+Read 320 ICMP(v6) packets outgoing
+Read 320 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 128...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 7804563 ns
+Sending took 5008.45 ms
+Read 640 ICMP(v6) packets outgoing
+Read 640 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 256...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 3901519 ns
+Sending took 5019.28 ms
+Read 1280 ICMP(v6) packets outgoing
+Read 1280 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 512...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 1948957 ns
+Sending took 5020.02 ms
+Read 2560 ICMP(v6) packets outgoing
+Read 2560 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1024...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 971761 ns
+Sending took 5029 ms
+Read 5120 ICMP(v6) packets outgoing
+Read 5120 ICMP(v6) packets replies
+Loss rate: 0
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 2048...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 481962 ns
+Sending took 5033.89 ms
+Read 10240 ICMP(v6) packets outgoing
+Read 5281 ICMP(v6) packets replies
+Loss rate: 0.484277
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1536...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 647202 ns
+Sending took 5038.79 ms
+Read 7680 ICMP(v6) packets outgoing
+Read 5286 ICMP(v6) packets replies
+Loss rate: 0.311719
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1280...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 775903 ns
+Sending took 5027.96 ms
+Read 6400 ICMP(v6) packets outgoing
+Read 5275 ICMP(v6) packets replies
+Loss rate: 0.175781
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1152...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 842692 ns
+Sending took 4910.04 ms
+Read 5760 ICMP(v6) packets outgoing
+Read 5156 ICMP(v6) packets replies
+Loss rate: 0.104861
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1088...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 912253 ns
+Sending took 5017.65 ms
+Read 5440 ICMP(v6) packets outgoing
+Read 5264 ICMP(v6) packets replies
+Loss rate: 0.0323529
+Starting icmp_echo_reply for 10.0.0.1 with probing rate 1120...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 886722 ns
+Sending took 5032.82 ms
+Read 5600 ICMP(v6) packets outgoing
+Read 5279 ICMP(v6) packets replies
+Loss rate: 0.0573214
+Found the triggering probing rate 1120 for the target loss rate interval [0.05, 0.1] for 10.0.0.1
+Loss rate: 0.0573214
+10.0.0.1, INDIVIDUAL, 1120, 2374, 0.0573214, 0.939182, 0.0608185, 1, 0

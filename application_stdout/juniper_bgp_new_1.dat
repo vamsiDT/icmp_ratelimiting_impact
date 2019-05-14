@@ -1,0 +1,32 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Successfully loaded changepoint package version 2.2.2
+ NOTE: Predefined penalty values changed in version 2.2.  Previous penalty values with a postfix 1 i.e. SIC1 are now without i.e. SIC and previous penalties without a postfix i.e. SIC are now with a postfix 0 i.e. SIC0. See NEWS and help files for further details.
+Successfully loaded changepoint.np package version 0.0.2
+ for 10.0.0.2 with probing rate 1900...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 522607 ns
+Sending took 5038.92 ms
+Read 9500 ICMP(v6) packets outgoing
+Read 9065 ICMP(v6) packets replies
+Loss rate: 0.0457895
+Starting icmp_echo_reply for 10.0.0.2 with probing rate 1995...
+Setting buffer receive size to 204800000...OK
+Sniffer started
+Starting warmup...OK.
+Interval between each probe is 489964 ns
+Sending took 4976.78 ms
+Read 9975 ICMP(v6) packets outgoing
+Read 9192 ICMP(v6) packets replies
+Loss rate: 0.0784962
+Found the triggering probing rate 1995 for the target loss rate interval [0.05, 0.99] for 10.0.0.2
+Loss rate: 0.0784962
+10.0.0.2, INDIVIDUAL, 1995, 8978, 0.0784962, 0.999565, 0.000435208, 0.00510856, 0.994891

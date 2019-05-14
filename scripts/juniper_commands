@@ -1,0 +1,43 @@
+#set ip address of interface 0
+edit
+set interfaces ge-0/0/0 unit 0 family inet address 192.168.2.254/24
+commit
+
+#set ip address of interface 1
+edit
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.2/30
+commit
+
+#Routing
+edit
+set routing-options static route 192.168.1.1/24 next-hop 10.0.0.1
+commit
+
+#Bgp
+
+set protocols bgp group external-peers type external
+set protocols bgp group external-peers neighbor 192.168.2.1 peer-as 1000
+set routing-options autonomous-system 2000
+commit
+
+#Policer
+set firewall policer police_class1 if-exceeding bandwidth-limit 900000
+set firewall policer police_class1 if-exceeding burst-size-limit 15000
+set firewall filter icmp_ratelimit term term1 from icmp-type echo-request destination-address 10.0.0.2
+set firewall filter icmp_ratelimit term term1 then policer police_class1
+set firewall filter icmp_ratelimit term term2 from icmp-type echo-request destination-address 192.168.2.254
+set firewall filter icmp_ratelimit term term2 then policer police_class1
+
+set interfaces ge-0/0/0 unit 0 family inet filter input icmp_ratelimit
+set interfaces ge-0/0/1 unit 0 family inet filter input icmp_ratelimit
+commit
+
+
+#Show cpu usage
+edit
+show chassis routing-engine
+
+#References
+https://www.juniper.net/documentation/en_US/junos/topics/topic-map/bgp-peering.html
+https://www.juniper.net/documentation/en_US/junos/topics/example/firewall-filter-stateless-example-rate-limits-based-on-destination-class.html
+https://www.juniper.net/documentation/en_US/junos/topics/topic-map/policy-static-routing.html

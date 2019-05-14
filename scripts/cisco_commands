@@ -1,0 +1,62 @@
+#set ip address of interface 0
+enable
+configure terminal
+interface GigabitEthernet0/0 192.168.1.254 255.255.255.0
+no shutdown
+
+#set ip address of interface 1
+enable
+configure terminal
+interface GigabitEthernet0/1 10.0.0.1 255.255.255.254
+no shutdown
+
+#to setup ip route
+enable
+configure terminal
+ip route 192.168.2.0/24 10.0.0.2
+
+#access-list
+enable
+configure terminal
+access-list 101 permit icmp any 192.168.1.254 0.0.0.255 echo
+access-list 101 permit icmp any 10.0.0.1 0.0.0.255 echo
+access-list 101 permit icmp 192.168.1.254 0.0.0.255 any echo-reply
+access-list 101 permit icmp 10.0.0.1 0.0.0.255 any echo-reply
+
+#Class-map
+enable
+configure terminal
+class-map match-all echoclass
+match access-group 101
+
+#policy-map
+enable
+configure terminal
+policy-map icmpol
+class echoclass
+police cir 6400000 bps conform-action transmit exceed-action drop
+
+
+#Interface0-policy
+enable 
+configure terminal
+interface GigabitEthernet0/0
+service-policy icmpol
+
+#Interface1-policy
+enable 
+configure terminal
+interface GigabitEthernet0/1
+service-policy icmpol
+
+#BGP
+enable
+configure terminal
+router bgp 2000
+address-family ipv4 unicast
+neighbor 192.168.1.1 remote-as 1000
+
+
+#Show cpu history
+enable
+show processes cpu history
